@@ -8,7 +8,6 @@ Donanım Paketi: Arduino Uno, LDR (Fotorezistör), 1x LED, 1x 10kΩ Direnç (Ger
 
 Kontrol Mantığı: Gerilim Bölücü (Voltage Divider) prensibi kullanılarak, LDR üzerindeki direnç değişimleri Arduino’nun ADC (Analog-to-Digital Converter) birimi sayesinde A0 pininden 0-1023 arasında dijital veriye dönüştürülür.
 
-PWM Entegrasyonu: LED bağlantısı PWM destekli bir pin (3, 5, 6...) üzerinden yapılarak, "soft" bir geçiş (fade) efekti sağlanmıştır.
 
 📖 Mühendislik Kazanımları
 
