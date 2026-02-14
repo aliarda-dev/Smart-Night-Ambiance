@@ -20,3 +20,18 @@ Veri İzleme: Serial Monitor üzerinden gerçek zamanlı veri akışının anali
 💡 Gelecek Vizyonu (Scalability)
 
 Bu temel yapı, sadece sensör tipini değiştirerek (örneğin MQ serisi gaz sensörleri ekleyerek) akıllı ev güvenlik sistemlerine veya endüstriyel otomasyon sistemlerine kolayca genişletilebilir bir mimariye sahiptir.
+
+### 🎥 Proje Demo Videosu
+
+
+
+
+
+
+https://github.com/user-attachments/assets/b96b0392-9119-437d-ac09-1726a12c1a83
+
+
+
+
+Ali Arda Kocabörek Akdeniz University | EEE Student# Smart-Night-Ambiance
+
