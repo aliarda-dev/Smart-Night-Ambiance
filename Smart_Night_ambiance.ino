@@ -1,25 +1,39 @@
 //Smart Night Ambiance Project
 //Ali Arda Kocabörek | Akdeniz EEE
 
-int isik_degeri=0;
+#include <Arduino.h>
+#define KLED_PIN 2
 
-void setup(){
+void isik_degeri(void);
 
-  Serial.begin(9600); //Buradaki amac odanin isiktaki esik degerini anlayip asagidaki if blogunu esik degeri bulunan sayiya gore ozellestirmek
-  pinMode(2,OUTPUT);
+
+
+int main(void){
+	
+	init();
+	
+	Serial.begin(9600);
+	
+	pinMode(KLED_PIN,OUTPUT);
+	
+	isik_degeri();
+	
+	
+	
 }
 
-void loop(){
-
-  isik_degeri=analogRead(A0);
-
-  Serial.println(isik_degeri);
-
-  if(isik_degeri<200){ //Goruldugu gibi ben burada odamdaki isik degerinin esigini 200 olarak aldim
-    digitalWrite(2,HIGH);
-  }
-
-  else{
-    digitalWrite(2,LOW);
-  }
+void isik_degeri(void){
+	
+	while(1){
+		
+	int isik_kontrol_degeri=analogRead(A0);
+	
+	Serial.println(isik_kontrol_degeri); //Bulunulan ortamın isik degerinin esigini bulmak icin
+	
+	(isik_kontrol_degeri>200) ? digitalWrite(KLED_PIN,LOW) : digitalWrite(KLED_PIN,HIGH);
+		
+	}
+	
+	delay(50)
+	
 }
