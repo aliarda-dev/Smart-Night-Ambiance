@@ -1,37 +1,40 @@
 🌙 Smart Ambient Lighting System (LDR-Controlled)
+LDR (fotorezistör) ile ortam ışığını ölçen, karanlıkta otomatik olarak LED'i açan basit bir akıllı aydınlatma prototipi.
+🛠️ Donanım
 
-Bu çalışma, Akdeniz Üniversitesi Elektrik-Elektronik Mühendisliği 1. sınıf öğrencisi olarak gerçekleştirdiğim, analog sensör verisini (LDR) işleyerek fiziksel bir çıktıya (LED) dönüştürdüğüm ilk gömülü sistem (Embedded Systems) projemdir. Projede, ortam ışığını ölçüp otonom bir tepki veren "Akıllı Aydınlatma" mantığı kurgulanmıştır.
+Arduino Uno
+LDR (Fotorezistör)
+1x LED
+10kΩ Direnç (gerilim bölücü)
+330Ω Direnç (LED koruma)
 
-🛠️ Teknik Özellikler
+⚙️ Nasıl Çalışır?
 
-Donanım Paketi: Arduino Uno, LDR (Fotorezistör), 1x LED, 1x 10kΩ Direnç (Gerilim Bölücü için), 1x 330Ω Direnç (LED için).
+LDR ve 10kΩ direnç gerilim bölücü oluşturur
+A0 pininden ADC ile 0-1023 arası değer okunur
+Belirlenen threshold değerinin altına düşülürse LED yanar
+Serial Monitor üzerinden anlık sensör değeri izlenebilir
 
-Kontrol Mantığı: Gerilim Bölücü (Voltage Divider) prensibi kullanılarak, LDR üzerindeki direnç değişimleri Arduino’nun ADC (Analog-to-Digital Converter) birimi sayesinde A0 pininden 0-1023 arasında dijital veriye dönüştürülür.
+📖 Teknik Notlar
 
+Gerilim bölücü prensibi ile analog sinyal dijitale çevrildi
+Threshold değeri deneme-yanılma ile ayarlandı, ortama göre değişir
+Serial Monitor debug için kullanıldı
 
-📖 Mühendislik Kazanımları
+⚠️ Limitasyonlar
 
-Analog Sinyal İşleme: Sürekli (analog) verinin okunması ve yazılımda bir "Eşik Değeri" (Threshold) ile karara bağlanması.
+Sabit threshold, farklı ortamlarda yeniden ayar gerektirir
+Tek LED, PWM ile kademeli parlaklık yok
+Gürültülü analog sinyal için filtreleme uygulanmadı
 
-Devre Tasarımı: Gerilim bölücü devresi kurma, direnç hesaplamaları ve ortak toprak (GND) hattı yönetimi.
+💡 Geliştirme Fikirleri
 
-Veri İzleme: Serial Monitor üzerinden gerçek zamanlı veri akışının analizi (Debugging).
+Adaptive threshold (hareketli ortalama ile)
+PWM ile ışık şiddetine orantılı parlaklık
+MQ serisi sensör ekleyerek gaz algılamaya genişletme
 
-💡 Gelecek Vizyonu (Scalability)
+🎥 Proje Demo Videosu Sistemin çalışma videosunu aşağıdan izleyebilirsiniz.
 
-Bu temel yapı, sadece sensör tipini değiştirerek (örneğin MQ serisi gaz sensörleri ekleyerek) akıllı ev güvenlik sistemlerine veya endüstriyel otomasyon sistemlerine kolayca genişletilebilir bir mimariye sahiptir.
+https://github.com/user-attachments/assets/69747c30-c749-4ff2-bb1d-25689b94c900
 
-### 🎥 Proje Demo Videosu
-
-
-
-
-
-
-https://github.com/user-attachments/assets/b96b0392-9119-437d-ac09-1726a12c1a83
-
-
-
-
-Ali Arda Kocabörek Akdeniz University | EEE Student# Smart-Night-Ambiance
 
