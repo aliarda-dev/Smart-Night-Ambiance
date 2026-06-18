@@ -33,7 +33,9 @@ Adaptive threshold (hareketli ortalama ile)
 PWM ile ışık şiddetine orantılı parlaklık
 MQ serisi sensör ekleyerek gaz algılamaya genişletme
 
-🎥 Proje Demo Videosu Sistemin çalışma videosunu aşağıdan izleyebilirsiniz.
+🎥 Proje Demo Videosu
+
+Sistemin çalışma videosunu aşağıdan izleyebilirsiniz.
 
 https://github.com/user-attachments/assets/69747c30-c749-4ff2-bb1d-25689b94c900
 
