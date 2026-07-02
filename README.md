@@ -1,5 +1,6 @@
 🌙 Smart Ambient Lighting System (LDR-Controlled)
 LDR (fotorezistör) ile ortam ışığını ölçen, karanlıkta otomatik olarak LED'i açan basit bir akıllı aydınlatma prototipi.
+
 🛠️ Donanım
 
 Arduino Uno
@@ -19,13 +20,6 @@ Serial Monitor üzerinden anlık sensör değeri izlenebilir
 
 Gerilim bölücü prensibi ile analog sinyal dijitale çevrildi
 Threshold değeri deneme-yanılma ile ayarlandı, ortama göre değişir
-Serial Monitor debug için kullanıldı
-
-⚠️ Limitasyonlar
-
-Sabit threshold, farklı ortamlarda yeniden ayar gerektirir
-Tek LED, PWM ile kademeli parlaklık yok
-Gürültülü analog sinyal için filtreleme uygulanmadı
 
 💡 Geliştirme Fikirleri
 
