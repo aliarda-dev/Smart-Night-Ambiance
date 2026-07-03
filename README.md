@@ -27,10 +27,19 @@ Adaptive threshold (hareketli ortalama ile)
 PWM ile ışık şiddetine orantılı parlaklık
 MQ serisi sensör ekleyerek gaz algılamaya genişletme
 
+***Not***
+
+Projenin PCB tasarımı için pil güç kaynaklı gerekli dosyaları yüklendi.
+
 🎥 Proje Demo Videosu
 
 Sistemin çalışma videosunu aşağıdan izleyebilirsiniz.
 
 https://github.com/user-attachments/assets/69747c30-c749-4ff2-bb1d-25689b94c900
+
+-📷 Proje PCB Medyası
+
+<img width="902" height="826" alt="smart-night-ambiance3" src="https://github.com/user-attachments/assets/2e54a2ba-8ccc-4f8c-b7da-96d17c90f70f" />
+
 
 
